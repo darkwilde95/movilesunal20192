@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OnlineMenu">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center" >
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="32dp"
+            android:layout_marginBottom="16dp"
+            android:hint="Enter a nickname"
+            android:inputType="textPersonName"/>
+
+        <Button
+            android:id="@+id/create_game"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="new game"
+            android:paddingHorizontal="24dp"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/join_game"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="join game"
+            android:paddingHorizontal="24dp" />
+
+    </LinearLayout>
+
+</FrameLayout>
