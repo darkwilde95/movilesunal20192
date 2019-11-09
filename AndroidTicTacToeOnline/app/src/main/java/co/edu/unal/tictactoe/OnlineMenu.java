@@ -40,7 +40,10 @@ public class OnlineMenu extends Fragment {
                     Toast.makeText(getContext(), "You must have a nickname", Toast.LENGTH_SHORT).show();
                     return ;
                 }
-                OnlineGame newFragment = new OnlineGame();
+                String roomId = mDatabase.push().getKey();
+                Room room = new Room(roomId, nick);
+                mDatabase.child("rooms").child(roomId).setValue(room);
+                OnlineGame newFragment = new OnlineGame(roomId, true);
                 FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
                 transaction.replace(R.id.fragment_container, newFragment);
                 transaction.addToBackStack(null);
@@ -60,7 +63,7 @@ public class OnlineMenu extends Fragment {
                     return ;
                 }
 
-                GamesList newFragment = new GamesList();
+                GamesList newFragment = new GamesList(nick);
                 FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
                 transaction.replace(R.id.fragment_container, newFragment);
                 transaction.addToBackStack(null);
