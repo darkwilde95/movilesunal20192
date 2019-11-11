@@ -8,7 +8,8 @@ public class Room {
     public String guestPlayer;
     public int move;
     public boolean open;
-    public boolean turn; //true -> creator, false -> guest
+    public boolean nextTurn; //true -> creator, false -> guest
+    public boolean ready;
 
     public Room () {}
 
@@ -18,10 +19,11 @@ public class Room {
         this.guestPlayer = null;
         this.move = -1;
         this.open = true;
-        this.turn = new Random().nextBoolean();
+        this.nextTurn = new Random().nextBoolean();
+        this.ready = false;
     }
 
-    public void nextTurn() {
-        this.turn = !this.turn;
+    public void changeTurn() {
+        this.nextTurn = !this.nextTurn;
     }
 }

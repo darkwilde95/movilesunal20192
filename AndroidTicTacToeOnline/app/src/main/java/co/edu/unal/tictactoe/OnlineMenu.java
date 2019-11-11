@@ -73,5 +73,4 @@ public class OnlineMenu extends Fragment {
 
         return menuFragment;
     }
-
 }
