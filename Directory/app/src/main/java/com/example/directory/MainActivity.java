@@ -94,6 +94,7 @@ public class MainActivity extends AppCompatActivity implements FilterDialogFragm
     }
 
     private void updateSearch(String newText) {
+        adapter.clear();
         Cursor c = mDatabase.rawQuery(query(), new String[] { "%" + newText + "%"});
         c.moveToFirst();
         for (int i = 0; i < c.getCount(); i++) {
@@ -168,7 +169,6 @@ public class MainActivity extends AppCompatActivity implements FilterDialogFragm
 
                 @Override
                 public boolean onQueryTextChange(String newText) {
-                    adapter.clear();
                     if (!newText.equalsIgnoreCase("")) {
                         updateSearch(newText);
                     }
@@ -221,6 +221,7 @@ public class MainActivity extends AppCompatActivity implements FilterDialogFragm
         consultoryFilter = consult;
         developmentFilter = develop;
         factoryFilter = factor;
+        updateSearch(search.getQuery().toString());
     }
 
     @Override
