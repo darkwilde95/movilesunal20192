@@ -114,7 +114,6 @@ public class OnlineGame extends Fragment {
                 if (iam && prevState.nextTurn || !iam && !prevState.nextTurn) {
                     //Toast.makeText(getContext(), "Entré", Toast.LENGTH_SHORT).show();
                     if (mGame.setMove(iam ? TicTacToe.X_PLAYER : TicTacToe.O_PLAYER, pos)) {
-                        Toast.makeText(getContext(), "Entré " + mGame.mBoard.toString(), Toast.LENGTH_SHORT).show();
                         onlineBoard.invalidate();
                         mDatabase.child("rooms").child(roomId).child("move").setValue(pos);
                         mDatabase.child("rooms").child(roomId).child("nextTurn").setValue(!prevState.nextTurn);
@@ -181,7 +180,7 @@ public class OnlineGame extends Fragment {
     @Override
     public void onStop() {
         super.onStop();
-        Toast.makeText(getContext(), "stop", Toast.LENGTH_SHORT).show();
+
         if ((iam && prevState.guestPlayer == null) || !iam && prevState.creatorPlayer == null) {
             mDatabase.child("rooms").child(roomId).onDisconnect().removeValue();
         } else if (iam) {

@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Directorio</string>
+    <string name="edit_activity_label">Añadir nuevo contacto</string>
+    <string name="contact_detail_label">Detalles de contacto</string>
+    <string name="search_activity_label">Buscar contacto</string>
+    <string name="enterprise_info_text">Información Básica</string>
+    <string name="products_services_text">Productos y servicios</string>
+    <string name="classifications_text">Clasificaciones</string>
+    <string name="enterprise_name_text">Nombre</string>
+    <string name="enterprise_website_text">Sitio web</string>
+    <string name="enterprise_phone_text">Número telefónico</string>
+    <string name="enterprise_email_text">e-mail</string>
+    <string name="save_text">Guardar</string>
+    <string name="edit_text">Editar</string>
+    <string name="delete_text">Eliminar</string>
+    <string name="search_text">Buscar</string>
+    <string name="cd_name_label">Nombre:</string>
+    <string name="cd_website_label">Sitio web:</string>
+    <string name="cd_email_label">e-mail:</string>
+    <string name="cd_phone_label">Teléfono:</string>
+    <string name="consultory_text">Consultoria</string>
+    <string name="development_text">Desarrollo a la medida</string>
+    <string name="factory_text">Fábrica de software</string>
+    <string name="accept_text">Aceptar</string>
+    <string name="cancel_text">Cancelar</string>
+    <string name="filters_text">Filtros</string>
+    <string name="delete_warning_text">Realmente desea eliminar este contacto?</string>
+    <string name="yes_text">Si</string>
+    <string name="no_text">No</string>
+</resources>

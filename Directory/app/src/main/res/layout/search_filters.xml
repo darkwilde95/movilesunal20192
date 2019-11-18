@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:id="@+id/filter_consultory_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:clickable="true"
+        android:padding="4dp"
+        android:background="?selectableItemBackground">
+        <CheckBox
+            android:id="@+id/filter_consultory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:checked="true"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:background="@android:color/transparent"
+            android:layout_gravity="center_vertical" />
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/consultory_text"
+            android:textSize="18sp"
+            android:textColor="@android:color/black" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/filter_development_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:clickable="true"
+        android:padding="4dp"
+        android:background="?selectableItemBackground">
+        <CheckBox
+            android:id="@+id/filter_development"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:checked="true"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:background="@android:color/transparent"
+            android:layout_gravity="center_vertical" />
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/development_text"
+            android:textSize="18sp"
+            android:textColor="@android:color/black" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/filter_factory_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:clickable="true"
+        android:padding="4dp"
+        android:background="?selectableItemBackground">
+        <CheckBox
+            android:id="@+id/filter_factory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:checked="true"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:background="@android:color/transparent"
+            android:layout_gravity="center_vertical" />
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/factory_text"
+            android:textSize="18sp"
+            android:textColor="@android:color/black" />
+    </LinearLayout>
+
+</LinearLayout>
