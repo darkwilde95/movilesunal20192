@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MapApp</string>
+    <string name="title_activity_maps">Map app</string>
+    <string name="preferences_text">Ajustes</string>
+    <string name="not_permission_text">Sin acceso a ubicación por GPS</string>
+    <string name="your_are_here">Estás aquí</string>
+    <string name="search_radio_text">Radio de búsqueda (50 - 2000)</string>
+</resources>
